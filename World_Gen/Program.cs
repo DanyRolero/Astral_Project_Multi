@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Grid<int> grid = new Grid<int>(3, 3);
+grid.Build(new RandomRangeGridIntBuilder(1, 4));
+
+Console.WriteLine(grid.ToString());
