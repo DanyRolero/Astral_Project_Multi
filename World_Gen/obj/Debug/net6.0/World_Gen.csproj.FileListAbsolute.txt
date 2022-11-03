@@ -1,15 +1,30 @@
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.csproj.AssemblyReference.cache
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.GeneratedMSBuildEditorConfig.editorconfig
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.AssemblyInfoInputs.cache
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.AssemblyInfo.cs
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.csproj.CoreCompileInputs.cache
-G:\C#\Astral_Project_Multi\World_Gen\bin\Debug\net6.0\World_Gen.exe
-G:\C#\Astral_Project_Multi\World_Gen\bin\Debug\net6.0\World_Gen.deps.json
-G:\C#\Astral_Project_Multi\World_Gen\bin\Debug\net6.0\World_Gen.runtimeconfig.json
-G:\C#\Astral_Project_Multi\World_Gen\bin\Debug\net6.0\World_Gen.dll
-G:\C#\Astral_Project_Multi\World_Gen\bin\Debug\net6.0\World_Gen.pdb
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.dll
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\refint\World_Gen.dll
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.pdb
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\World_Gen.genruntimeconfig.cache
-G:\C#\Astral_Project_Multi\World_Gen\obj\Debug\net6.0\ref\World_Gen.dll
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.AssemblyReference.cache
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.GeneratedMSBuildEditorConfig.editorconfig
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfoInputs.cache
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfo.cs
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.CoreCompileInputs.cache
+G:/C#/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.exe
+G:/C#/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.deps.json
+G:/C#/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.runtimeconfig.json
+G:/C#/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.dll
+G:/C#/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.pdb
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.dll
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/refint/World_Gen.dll
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.pdb
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.genruntimeconfig.cache
+G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/ref/World_Gen.dll
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.deps.json
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.runtimeconfig.json
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.dll
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.pdb
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.AssemblyReference.cache
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfoInputs.cache
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfo.cs
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.CoreCompileInputs.cache
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.dll
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/refint/World_Gen.dll
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.pdb
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.genruntimeconfig.cache
+/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/ref/World_Gen.dll

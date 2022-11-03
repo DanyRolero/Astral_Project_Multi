@@ -3,6 +3,7 @@
 public class OddEvenConnector : GridGraphBuilder
 {
     Grid<int> adjacentsMask;
+
     public OddEvenConnector(Grid<int> adjacentsMask)
     {                 
         this.adjacentsMask = adjacentsMask;
@@ -12,18 +13,20 @@ public class OddEvenConnector : GridGraphBuilder
     {
         for (int i = 0; i < graph.length; i++)
         {
-            if (adjacentsMask[i] != -1)
-            {
                 int y = i / graph.columns;
                 int x = i % graph.columns;
 
-                if (y > 0) graph.AddAdjacent(i, i - graph.columns);
+            if (y > 0)
+            {
+                if (adjacentsMask[i] % 2 == adjacentsMask[i - graph.columns] % 2)
+                {
+                    graph.AddAdjacent(i, i - graph.columns);
+                }
+            }
+            
                 if (x > 0) graph.AddAdjacent(i, i - 1);
                 if (x < graph.columns - 1) graph.AddAdjacent(i, i + 1);
-                if (y < graph.rows - 1) graph.AddAdjacent(i, i + graph.columns);
-
-
-            }
+                if (y < graph.rows - 1) graph.AddAdjacent(i, i + graph.columns);   
         }
     }
 
