@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj": {}
+    "/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj": {}
   },
   "projects": {
-    "/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj": {
+    "/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj",
+        "projectUniqueName": "/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj",
         "projectName": "World_Gen",
-        "projectPath": "/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj",
-        "packagesPath": "/Users/imac2019/.nuget/packages/",
-        "outputPath": "/Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/",
+        "projectPath": "/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/World_Gen.csproj",
+        "packagesPath": "/Users/danito/.nuget/packages/",
+        "outputPath": "/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/imac2019/.nuget/NuGet/NuGet.Config"
+          "/Users/danito/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

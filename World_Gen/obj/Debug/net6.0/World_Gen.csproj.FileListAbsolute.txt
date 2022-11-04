@@ -28,3 +28,18 @@ G:/C#/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/ref/World_Gen.dll
 /Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.pdb
 /Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.genruntimeconfig.cache
 /Users/imac2019/Desktop/PROYECTOS VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/ref/World_Gen.dll
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.deps.json
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.runtimeconfig.json
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.dll
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/bin/Debug/net6.0/World_Gen.pdb
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.AssemblyReference.cache
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfoInputs.cache
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.AssemblyInfo.cs
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.csproj.CoreCompileInputs.cache
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.dll
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/refint/World_Gen.dll
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.pdb
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/World_Gen.genruntimeconfig.cache
+/Users/danito/Desktop/VISUAL STUDIO/Astral_Project_Multi/World_Gen/obj/Debug/net6.0/ref/World_Gen.dll
