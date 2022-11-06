@@ -26,26 +26,42 @@ public class OddEvenConnector : GridGraphBuilder
 
             if (x > 0) 
             {
-
-                graph.AddAdjacent(i, i - 1);
+                if (adjacentsMask[i] % 2 == adjacentsMask[i - 1] % 2)
+                {
+                    graph.AddAdjacent(i, i-1);
+                } 
             }
-            if (x < graph.columns - 1) graph.AddAdjacent(i, i + 1);
-            if (y < graph.rows - 1) graph.AddAdjacent(i, i + graph.columns);
+
+            if (x < graph.columns - 1) 
+            {
+                if (adjacentsMask[i] % 2 == adjacentsMask[i + 1] % 2)
+                {
+                    graph.AddAdjacent(i, i + 1);
+                }
+            }
+
+            
+            if (y < graph.rows - 1) 
+            {
+                if (adjacentsMask[i] % 2 == adjacentsMask[i + graph.columns] % 2)
+                {
+                    graph.AddAdjacent(i, i + graph.columns);
+                }
+            }
+            
+            
         }
     }
 
     protected bool IsEqualOddOrEvenTwoValues(int value1, int value2) 
     {
-
-
         return false;
     }
 
-    public static GridGraph Create(Grid<int> mask)
+    public GridGraph Create()
     {
-        GridGraph graph = new GridGraph(mask.columns, mask.rows);
-
-
+        GridGraph graph = new GridGraph(adjacentsMask.columns, adjacentsMask.rows);
+        Build(graph);
         return graph;
     }
 }
