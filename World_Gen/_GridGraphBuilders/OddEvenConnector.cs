@@ -16,52 +16,31 @@ public class OddEvenConnector : GridGraphBuilder
             int y = i / graph.columns;
             int x = i % graph.columns;
 
-            if (y > 0)
+            if (y > 0 && IsEqualOddOrEvenTwoValues(adjacentsMask[i], adjacentsMask[i - graph.columns]))
             {
-                if (adjacentsMask[i] % 2 == adjacentsMask[i - graph.columns] % 2)
-                {
-                    graph.AddAdjacent(i, i - graph.columns);
-                }
+                graph.AddAdjacent(i, i - graph.columns);
             }
 
-            if (x > 0) 
+            if (x > 0 && IsEqualOddOrEvenTwoValues(adjacentsMask[i], adjacentsMask[i - 1]))
             {
-                if (adjacentsMask[i] % 2 == adjacentsMask[i - 1] % 2)
-                {
-                    graph.AddAdjacent(i, i-1);
-                } 
+                graph.AddAdjacent(i, i - 1);
             }
 
-            if (x < graph.columns - 1) 
+            if (x < graph.columns - 1 && IsEqualOddOrEvenTwoValues(adjacentsMask[i], adjacentsMask[i + 1]))
             {
-                if (adjacentsMask[i] % 2 == adjacentsMask[i + 1] % 2)
-                {
-                    graph.AddAdjacent(i, i + 1);
-                }
+                graph.AddAdjacent(i, i + 1);
             }
 
-            
-            if (y < graph.rows - 1) 
+            if (y < graph.rows - 1 && IsEqualOddOrEvenTwoValues(adjacentsMask[i], adjacentsMask[i + graph.columns]))
             {
-                if (adjacentsMask[i] % 2 == adjacentsMask[i + graph.columns] % 2)
-                {
-                    graph.AddAdjacent(i, i + graph.columns);
-                }
+                graph.AddAdjacent(i, i + graph.columns);
             }
-            
-            
         }
     }
 
-    protected bool IsEqualOddOrEvenTwoValues(int value1, int value2) 
+    protected bool IsEqualOddOrEvenTwoValues(int value1, int value2)
     {
+        if (value1 % 2 == value2 % 2) return true;
         return false;
-    }
-
-    public GridGraph Create()
-    {
-        GridGraph graph = new GridGraph(adjacentsMask.columns, adjacentsMask.rows);
-        Build(graph);
-        return graph;
     }
 }

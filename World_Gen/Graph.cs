@@ -8,6 +8,8 @@ public class Graph {
 
     public List<SubGraph> subgraphs { get; protected set; }
 
+    public int this[int idNode, int indexAdjacent] => nodes[idNode].adjacents[indexAdjacent];
+
     /*-----------------------------------------------------*/   
     public Graph(int amountNodes = 1)
     {
@@ -51,6 +53,10 @@ public class Graph {
         return nodes[node].adjacents[adjacent];
     }
 
+    public int GetTotalAdjacentsFromNode(int indexNode) 
+    {
+        return nodes[indexNode].adjacents.Count;
+    }
     public List<int> GetAllAdjacentsFromNode(int node)
     {
         return nodes[node].adjacents;
@@ -72,6 +78,19 @@ public class Graph {
             for (int j = 0; j < nodes[i].adjacents.Count; j++)
             {
                 str += nodes[i].adjacents[j].ToString() + ", ";
+            }
+            str += "\n";
+        }
+
+        str += "\nSubGrafos:\n";
+
+        for (int i = 0; i < subgraphs.Count; i++) 
+        {
+            str += i + "-> ";
+
+            for (int j = 0; j < subgraphs[i].idNodes.Count; j++) 
+            {
+                str += subgraphs[i].idNodes[j].ToString() + " ";
             }
             str += "\n";
         }
