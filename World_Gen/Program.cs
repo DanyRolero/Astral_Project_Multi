@@ -13,3 +13,5 @@ Console.WriteLine(graph.ToString());
 grid.Build(new SubGraphsIdentifier(graph));
 Console.WriteLine(grid.ToString());
 
+graph.Build(new AdjacentsGridIntValuesConnector(grid));
+Console.WriteLine(graph.ToString());
