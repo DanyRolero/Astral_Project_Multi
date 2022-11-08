@@ -10,6 +10,8 @@ public class Graph {
 
     public int this[int idNode, int indexAdjacent] => nodes[idNode].adjacents[indexAdjacent];
 
+    public int totalSubgraps { get => subgraphs.Count; }
+
     /*-----------------------------------------------------*/   
     public Graph(int amountNodes = 1)
     {
@@ -65,6 +67,22 @@ public class Graph {
     public bool CheckHasAdjacent(int node, int adjacent)
     {
         return nodes[node].adjacents.Contains(adjacent);
+    }
+
+    /*-----------------------------------------------------*/
+    public int GetTotalSubgraphs()
+    {
+        return subgraphs.Count;
+    }
+
+    public int GetTotalNodesFromSubgraphs(int indexSubgraph)
+    {
+        return subgraphs[indexSubgraph].idNodes.Count;
+    }
+
+    public int GetNodeFromSubgraph(int indexSubgraph, int indexNode)
+    {
+        return subgraphs[indexSubgraph].idNodes[indexNode];
     }
 
     /*-----------------------------------------------------*/
