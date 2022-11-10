@@ -13,5 +13,5 @@ Console.WriteLine(graph.ToString());
 grid.Build(new SubGraphsIdentifier(graph));
 Console.WriteLine(grid.ToString());
 
-graph.Build(new AdjacentsGridIntValuesConnector(grid));
+graph.Build(new AdjacentsDesequalGridIntValuesConnector(grid));
 Console.WriteLine(graph.ToString());

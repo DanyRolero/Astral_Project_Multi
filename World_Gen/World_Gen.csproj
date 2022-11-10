@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="_GridGraphBuilders\MazesBuilders\" />
+    <None Remove="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_GridGraphBuilders\MazesBuilders\" />
+    <Folder Include="_Enums\" />
+  </ItemGroup>
 </Project>
