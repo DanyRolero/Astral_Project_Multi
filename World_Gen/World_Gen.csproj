@@ -10,9 +10,11 @@
   <ItemGroup>
     <None Remove="_GridGraphBuilders\MazesBuilders\" />
     <None Remove="Enums\" />
+    <None Remove="_Random\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_GridGraphBuilders\MazesBuilders\" />
     <Folder Include="_Enums\" />
+    <Folder Include="_Random\" />
   </ItemGroup>
 </Project>

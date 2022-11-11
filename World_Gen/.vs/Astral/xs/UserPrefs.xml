@@ -1,32 +1,31 @@
 ﻿<Properties StartupConfiguration="{AE40E9F4-1603-42A7-B2AC-C5652B255610}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="_GridGraphBuilders/MazesBuilders/BinaryTree.cs">
     <Files>
-      <File FileName="_GridGraphBuilders/AbstractGraphBuilder.cs" Line="1" Column="1" />
       <File FileName="Program.cs" Line="17" Column="37" />
-      <File FileName="Graph.cs" Line="1" Column="1" />
-      <File FileName="_GridGraphBuilders/ConnectedGridGraphBuilder.cs" Line="5" Column="1" />
-      <File FileName="_GridGraphBuilders/MazesBuilders/BinaryTree.cs" Line="39" Column="57" />
-      <File FileName="Corner.cs" Line="8" Column="1" />
+      <File FileName="_GridGraphBuilders/ConnectedGridGraphBuilder.cs" Line="16" Column="2" />
+      <File FileName="_GridGraphBuilders/MazesBuilders/BinaryTree.cs" Line="18" Column="48" />
+      <File FileName="_Random/AstralRandom.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Astral" expanded="True">
             <Node name="World_Gen" expanded="True">
-              <Node name="_Enums" expanded="True" />
               <Node name="_GridGraphBuilders" expanded="True">
                 <Node name="MazesBuilders" expanded="True" />
                 <Node name="ConnectedGridGraphBuilder.cs" selected="True" />
               </Node>
+              <Node name="_GridIntBuilders" expanded="True" />
+              <Node name="_Random" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
