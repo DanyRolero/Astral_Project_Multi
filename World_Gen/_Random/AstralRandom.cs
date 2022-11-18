@@ -6,5 +6,3 @@
         return random.NextSingle() > ratio;
     }
 }
-
-

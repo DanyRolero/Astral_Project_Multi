@@ -59,6 +59,7 @@ public class Graph {
     {
         return nodes[indexNode].adjacents.Count;
     }
+
     public List<int> GetAllAdjacentsFromNode(int node)
     {
         return nodes[node].adjacents;

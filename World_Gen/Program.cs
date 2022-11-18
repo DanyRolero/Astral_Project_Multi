@@ -1,6 +1,7 @@
 ﻿int columns = 3;
 int rows = 3;
 
+/*
 Grid<int> grid = new Grid<int>(columns, rows);
 grid.Build(new RandomRangeGridIntBuilder(1, 4));
 Console.WriteLine(grid.ToString());
@@ -15,3 +16,8 @@ Console.WriteLine(grid.ToString());
 
 graph.Build(new AdjacentsDesequalGridIntValuesConnector(grid));
 Console.WriteLine(graph.ToString());
+*/
+
+GridGraph g = new GridGraph(columns, rows);
+g.Build(new BinaryTree());
+Console.WriteLine(g.ToString());
