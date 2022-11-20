@@ -20,4 +20,7 @@ Console.WriteLine(graph.ToString());
 
 GridGraph g = new GridGraph(columns, rows);
 g.Build(new BinaryTree());
+MazeRunner runner = new MazeRunner(g);
+runner.Build(new DirectionPriority());
 Console.WriteLine(g.ToString());
+Console.WriteLine(runner.ToString());

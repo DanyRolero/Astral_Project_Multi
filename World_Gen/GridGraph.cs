@@ -40,5 +40,5 @@ public class GridGraph : Graph
         Direction.Down => node + columns,
         Direction.Left => node - 1,
         _ => throw new ArgumentOutOfRangeException(nameof(adjacent), $"Not expected direction value: {adjacent}"),
-};
+    };
 }
