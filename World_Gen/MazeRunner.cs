@@ -1,4 +1,4 @@
-﻿public abstract class MazeRunner
+﻿public class MazeRunner
 {
     int initialNode;
     public List<int> path = new List<int>();
@@ -12,5 +12,8 @@
         path.Add(initialNode);
     }
 
-    
+    public void Build(MazeRunnerBuilder builder)
+    {
+        builder.Build(this);
+    }
 }
