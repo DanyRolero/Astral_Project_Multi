@@ -9,7 +9,6 @@ public class RandomRangeGridIntBuilder : Builder<int>
         this.max = max;
     }
 
-
     public override void Build(Grid<int> grid)
     {
         Random random;

@@ -18,9 +18,20 @@ graph.Build(new AdjacentsDesequalGridIntValuesConnector(grid));
 Console.WriteLine(graph.ToString());
 */
 
-GridGraph g = new GridGraph(columns, rows);
-g.Build(new BinaryTree());
-MazeRunner runner = new MazeRunner(g);
-runner.Build(new DirectionPriority());
-Console.WriteLine(g.ToString());
-Console.WriteLine(runner.ToString());
+//Creamos un grafo en forma de grilla
+GridGraph maze = new GridGraph(columns, rows);
+
+//Construimos el grafo como laberinto con ese algoritmo
+maze.Build(new BinaryTree());
+Console.WriteLine(maze.ToString());
+
+//Matriz de enteros que representa el recorrido
+Grid<int> mazePath = new Grid<int>(columns, rows);
+PathMazePriorityDirection pathBuilder = new PathMazePriorityDirection(maze);
+mazePath.Build(pathBuilder);
+Console.WriteLine(mazePath.ToString());
+
+for (int i = 0; i < pathBuilder.path.Length; i++)
+{
+    Console.WriteLine(pathBuilder.path[i].ToString() + " ");
+}
