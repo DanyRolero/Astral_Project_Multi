@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-
-
 public class Grid<T>
 {
     public int length { get; protected set; }
@@ -30,7 +27,19 @@ public class Grid<T>
 
     }
 
+    public Grid(T initialValue, int columns = 2, int rows = 2)
+    {
+        length = columns * rows;
+        this.columns = columns;
+        this.rows = rows;
 
+        grid = new List<T>(length);
+
+        for (int i = 0; i < length; i++)
+        {
+            grid.Add(initialValue);
+        }
+    }
     /*-----------------------------------------------------*/
     public void SetValue(int index, T value)
     {
@@ -42,7 +51,6 @@ public class Grid<T>
         int index = (y * columns) + x;
         grid[index] = value;
     }
-
 
     /*-----------------------------------------------------*/
     public T GetValue(int index)
@@ -56,6 +64,28 @@ public class Grid<T>
         return grid[index];
     }
 
+    /*-----------------------------------------------------*/
+    public bool HasAdjacent(int index, Direction adjacent)
+    {
+        int x = index % columns;
+        int y = index / columns;
+
+        if (adjacent == Direction.Up && y > 0) return true;
+        if (adjacent == Direction.Right && x < columns - 1) return true;
+        if (adjacent == Direction.Down && y < rows - 1) return true;
+        if (adjacent == Direction.Left && x > 0) return true;
+
+        return false;
+    }
+
+    public T GetAdjacent(int index, Direction adjacent) => adjacent switch
+    {
+        Direction.Up => grid[index - columns],
+        Direction.Right => grid[index + 1],
+        Direction.Down => grid[index + columns],
+        Direction.Left => grid[index - 1],
+        _ => throw new ArgumentOutOfRangeException(nameof(adjacent), $"Not expected direction value: {adjacent}"),
+    };
 
     /*-----------------------------------------------------*/
     public override string ToString()
@@ -66,13 +96,12 @@ public class Grid<T>
         {
             for (int x = 0; x < columns; x++)
             {
-                str +=  GetValue(x,y).ToString() + " ";
+                str += GetValue(x, y).ToString() + " ";
             }
             str += "\n";
         }
         return str;
     }
-
 
     /*-----------------------------------------------------*/
     public void PrintUnityConsole()
@@ -80,6 +109,10 @@ public class Grid<T>
         //Debug.Log(ToString());
     }
 
+    public void PrintOnConsole()
+    {
+        Console.Write(ToString());
+    }
 
     /*-----------------------------------------------------*/
     public void Build(Builder<T> builder)
@@ -100,9 +133,4 @@ public class Grid<T>
             grid.Add(default(T));
         }
     }
-
 }
-
-/*-----------------------------------------------------*/
-
-

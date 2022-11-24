@@ -1,36 +1,26 @@
-﻿public class PathMazePriorityDirection : Builder<int>
+﻿//Recorre un grafo según orden de prioridad al elegir direcciones
+public class PriorityDirecction : GridGraphRunnerBuilder
 {
-    GridGraph maze;
+    GridGraph graph;
     Direction[] directionsPriority = new Direction[4];
     List<int> stack = new List<int>();
     bool[] visited;
-    public int[] path;
 
-    int initialNode;
     int currentNode = 0;
     int currentPosition = 0;
     bool hasAdjacent = false;
     int currentAdjacent = 0;
-    
-    /*-----------------------------------------------------*/
-    public PathMazePriorityDirection(GridGraph maze, int initialNode = 0)
+
+
+    public PriorityDirecction()
     {
-        this.maze = maze;
-        this.initialNode = initialNode;
-        path = new int[maze.length];
-        path[currentPosition] = initialNode;
-
-        visited = new bool[maze.length];
-        visited[initialNode] = true;
-        stack.Add(initialNode);
-
         directionsPriority[0] = Direction.Up;
         directionsPriority[1] = Direction.Right;
         directionsPriority[2] = Direction.Down;
         directionsPriority[3] = Direction.Left;
     }
 
-    /*-----------------------------------------------------*/
+    /*------------------------------------------------------------------------*/
     public void SetPriority(Direction direction, int priority)
     {
         int oldPosition = 0;
@@ -44,12 +34,14 @@
         directionsPriority[priority] = direction;
     }
 
-    /*-----------------------------------------------------*/
-    public override void Build(Grid<int> grid)
+    /*------------------------------------------------------------------------*/
+    public override void Build(GridGraphRunner runner)
     {
-        if (grid.length != maze.length) grid.Reset(maze.columns, maze.rows);
-
-        grid.SetValue(initialNode, currentPosition);
+        graph = runner.graph;
+        stack.Add(runner.initialNode);
+        visited = new bool[graph.length];
+        visited[runner.initialNode] = true;
+        runner.path[currentPosition] = runner.initialNode;
 
         while (stack.Count > 0)
         {
@@ -58,18 +50,17 @@
 
             for (int i = 0; i < directionsPriority.Length; i++)
             {
-                if (maze.HasAdjacent(currentNode, directionsPriority[i]))
+                if (graph.HasAdjacent(currentNode, directionsPriority[i]))
                 {
-                    currentAdjacent = maze.GetAdjacent(currentNode, directionsPriority[i]);
+                    currentAdjacent = graph.GetAdjacent(currentNode, directionsPriority[i]);
 
                     if (!visited[currentAdjacent])
                     {
                         hasAdjacent = true;
                         visited[currentAdjacent] = true;
                         currentPosition++;
-                        grid.SetValue(currentAdjacent, currentPosition);
                         stack.Add(currentAdjacent);
-                        path[currentPosition] = currentAdjacent;
+                        runner.path[currentPosition] = currentAdjacent;
                         break;
                     }
                 }

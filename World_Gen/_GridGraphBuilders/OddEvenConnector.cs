@@ -1,5 +1,6 @@
-﻿using System;
-
+﻿//Conecta los nodos de un grafo en forma de grilla
+//A partir de una matriz de enteros.
+//Conecta cada par de nodos si ambos son pares o ambos son impares.
 public class OddEvenConnector : GridGraphBuilder
 {
     Grid<int> adjacentsMask;

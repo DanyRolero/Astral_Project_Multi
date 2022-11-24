@@ -1,3 +1,4 @@
+//Buildea una matriz de enteros con valores aleatorios dentro de un rango dado.
 public class RandomRangeGridIntBuilder : Builder<int>
 {
     public int min;

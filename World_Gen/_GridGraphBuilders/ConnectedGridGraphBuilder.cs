@@ -1,3 +1,4 @@
+//Conecta todos los nodos adyacentes de un grafo en forma de grilla
 public class ConnectedGridGraphBuilder : GridGraphBuilder
 {
     public override void Build(GridGraph graph)

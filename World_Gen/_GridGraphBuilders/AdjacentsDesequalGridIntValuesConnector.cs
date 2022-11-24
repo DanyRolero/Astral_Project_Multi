@@ -1,4 +1,6 @@
-﻿public class AdjacentsDesequalGridIntValuesConnector : GridGraphBuilder
+﻿//Conecta los nodos de un grafo a partir de una matriz de enteros.
+//Dos nodos son adyacentes si sus valores respecto a la matriz no coinciden.
+public class AdjacentsDesequalGridIntValuesConnector : GridGraphBuilder
 {
     Grid<int> adjMask;
 

@@ -1,3 +1,4 @@
+//Construye una matriz binaria con forma de pirámide
 public class PyramidGridBoolBuilder : Builder<bool>
 {
     private int widthStep;

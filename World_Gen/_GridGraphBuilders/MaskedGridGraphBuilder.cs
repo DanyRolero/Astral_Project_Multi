@@ -1,3 +1,5 @@
+//Conecta los nodos de un grafo en forma de grilla.
+//Deja aislados los nodos enmascarados.
 public class MaskedGridGraphBuilder : GridGraphBuilder
 {
     public Grid<bool> mask;

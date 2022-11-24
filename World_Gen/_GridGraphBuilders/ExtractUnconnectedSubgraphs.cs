@@ -1,3 +1,5 @@
+//Buildea subgrafos de un grafo.
+//Extrae los subgrafos de un grafo, usar con grafos inconexos.
 public class ExtractUnconnectedSubgraphs : GridGraphBuilder
 {
     int lastVisitedCell = 0;
