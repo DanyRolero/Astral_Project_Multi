@@ -7,6 +7,7 @@ public class DistancesFromOriginInPathCreator : GridCreator<int>
 
     int currentAdjacent = 0;
     int largestAdjacent = 0;
+    int currentPosition = 0;
 
     GridGraph graph;
     Grid<int> grid;
@@ -25,17 +26,18 @@ public class DistancesFromOriginInPathCreator : GridCreator<int>
     {
         for (int i = 1; i < path.Length; i++)
         {
-            UpdateLagestAdjacent(path[i], Direction.Up);
-            UpdateLagestAdjacent(path[i], Direction.Right);
-            UpdateLagestAdjacent(path[i], Direction.Down);
-            UpdateLagestAdjacent(path[i], Direction.Left);
+            currentPosition = path[i];
+            UpdateLargestAdjacent(Direction.Up);
+            UpdateLargestAdjacent(Direction.Right);
+            UpdateLargestAdjacent(Direction.Down);
+            UpdateLargestAdjacent(Direction.Left);
             grid.SetValue(path[i], largestAdjacent + 1);
             largestAdjacent = 0;
         }
         return grid;
     }
 
-    private void UpdateLagestAdjacent(int currentPosition, Direction direction)
+    private void UpdateLargestAdjacent(Direction direction)
     {
         if (graph.HasAdjacent(currentPosition, direction))
         {

@@ -1,30 +1,34 @@
 ﻿<Properties StartupConfiguration="{AE40E9F4-1603-42A7-B2AC-C5652B255610}|Default">
-  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_GridIntCreators/DistancesFromOriginInPath.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="_GridGraphRunnerBuilder/PriorityDirecction.cs">
     <Files>
-      <File FileName="Program.cs" Line="30" Column="1" />
-      <File FileName="GenericGrid.cs" Line="114" Column="35" />
-      <File FileName="_GridIntCreators/DistancesFromOriginInPath.cs" Line="21" Column="35" />
-      <File FileName="GridGraph.cs" Line="43" Column="7" />
+      <File FileName="Program.cs" />
+      <File FileName="GenericGrid.cs" Line="136" Column="2" />
+      <File FileName="GridGraph.cs" />
+      <File FileName="SubGraph.cs" Line="1" Column="1" />
+      <File FileName="Graph.cs" Line="15" Column="62" />
+      <File FileName="GridGraphRunner.cs" Line="49" Column="59" />
+      <File FileName="_GridGraphRunnerBuilder/PriorityDirecction.cs" Line="70" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Astral" expanded="True">
             <Node name="World_Gen" expanded="True">
-              <Node name="_GridIntBuilders" expanded="True" />
-              <Node name="_GridIntCreators" expanded="True" />
-              <Node name="GridGraph.cs" selected="True" />
+              <Node name="_GridGraphBuilders" expanded="True" />
+              <Node name="_GridGraphRunnerBuilder" expanded="True">
+                <Node name="PriorityDirecction.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -1,16 +1,18 @@
 ﻿//Recorre un grafo según orden de prioridad al elegir direcciones
 public class PriorityDirecction : GridGraphRunnerBuilder
 {
-    GridGraph graph;
+    GridGraph graph = new GridGraph();
     Direction[] directionsPriority = new Direction[4];
     List<int> stack = new List<int>();
-    bool[] visited;
+    bool[] visited = Array.Empty<bool>();
 
     int currentNode = 0;
     int currentPosition = 0;
     bool hasAdjacent = false;
     int currentAdjacent = 0;
 
+    bool isBackTracking = false;
+    int currentWay = 0;
 
     public PriorityDirecction()
     {
@@ -39,9 +41,13 @@ public class PriorityDirecction : GridGraphRunnerBuilder
     {
         graph = runner.graph;
         stack.Add(runner.initialNode);
+
         visited = new bool[graph.length];
         visited[runner.initialNode] = true;
+
         runner.path[currentPosition] = runner.initialNode;
+        runner.AddWay();
+        runner.AddNodeToWay(0, runner.initialNode);
 
         while (stack.Count > 0)
         {
@@ -61,12 +67,27 @@ public class PriorityDirecction : GridGraphRunnerBuilder
                         currentPosition++;
                         stack.Add(currentAdjacent);
                         runner.path[currentPosition] = currentAdjacent;
+
+                        if (isBackTracking)
+                        {
+                            runner.AddWay();
+                            currentWay = runner.ways.Count - 1;
+                            runner.AddNodeToWay(currentWay, currentNode);
+                            isBackTracking = false;
+                        }
+
+                        runner.AddNodeToWay(currentWay, currentAdjacent);
+
                         break;
                     }
                 }
             }
 
-            if (!hasAdjacent) stack.RemoveAt(stack.Count - 1);
+            if (!hasAdjacent)
+            {
+                stack.RemoveAt(stack.Count - 1);
+                isBackTracking = true;
+            }
         }
     }
 }

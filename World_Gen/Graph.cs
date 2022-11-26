@@ -71,6 +71,17 @@ public class Graph {
     }
 
     /*-----------------------------------------------------*/
+    public void AddSubgraph()
+    {
+        subgraphs.Add(new SubGraph());
+    }
+
+    public void AddSubGraphNode(int indexSubgraph, int node)
+    {
+        subgraphs[indexSubgraph].AddIdNode(node);
+    }
+
+
     public int GetTotalSubgraphs()
     {
         return subgraphs.Count;

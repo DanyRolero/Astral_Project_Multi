@@ -28,5 +28,5 @@ GridGraphRunner runner = new(maze);
 runner.Build(new PriorityDirecction());
 Console.WriteLine(runner.ToString());
 
-Grid<int> gridDistances = new DistancesFromOriginInPathCreator(runner).Create();
-gridDistances.PrintOnConsole();
+
+

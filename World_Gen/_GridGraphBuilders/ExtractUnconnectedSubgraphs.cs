@@ -1,12 +1,12 @@
 //Buildea subgrafos de un grafo.
-//Extrae los subgrafos de un grafo, usar con grafos inconexos.
+//Los nodos de cada subgrafo solo son conexos en el subgrafo al que pertenecen.
 public class ExtractUnconnectedSubgraphs : GridGraphBuilder
 {
     int lastVisitedCell = 0;
     List<int> currentAdjacents = new List<int>();
-    bool[] visitedCells;
+    bool[] visitedCells = new bool[0];
 
-    Graph graph;
+    Graph graph = new Graph(0);
 
     public override void Build(GridGraph graph)
     {

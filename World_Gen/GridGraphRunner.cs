@@ -4,6 +4,7 @@
     public GridGraph graph;
 
     public int[] path;
+    public List<SubGraph> ways;
 
     public GridGraphRunner(GridGraph graph, int initialNode = 0)
     {
@@ -11,15 +12,27 @@
         this.graph = graph;
 
         path = new int[graph.length];
+        ways = new List<SubGraph>();
     }
 
+    /*------------------------------------------------------------------------*/
+    public void AddWay()
+    {
+        ways.Add(new SubGraph());
+    }
 
+    public void AddNodeToWay(int way, int node)
+    {
+        ways[way].AddIdNode(node);
+    }
+
+    /*------------------------------------------------------------------------*/
     public void Build(GridGraphRunnerBuilder builder)
     {
         builder.Build(this);
     }
 
-
+    /*------------------------------------------------------------------------*/
     public override string ToString()
     {
         string str = "Recorrido de GridGraph Runner:\n";
@@ -28,7 +41,17 @@
         {
             str += path[i].ToString() + " -> ";
         }
-        str += "\n";
+        str += "\nCaminos:\n";
+
+        for (int i = 0; i < ways.Count; i++)
+        {
+            str += "Camino " + i.ToString() + " -> ";
+            for(int j = 0; j < ways[i].idNodes.Count; j++)
+            {
+                str += ways[i].idNodes[j].ToString() + " ";
+            }
+            str += "\n";
+        }
 
         return str;
     }

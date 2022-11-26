@@ -111,7 +111,7 @@ public class Grid<T>
 
     public void PrintOnConsole()
     {
-        Console.Write(ToString());
+        Console.WriteLine(ToString());
     }
 
     /*-----------------------------------------------------*/
