@@ -10,7 +10,6 @@ public class Grid<T>
 
     internal List<T> grid;
 
-
     /*-----------------------------------------------------*/
     public Grid(int columns = 2, int rows = 2)
     {

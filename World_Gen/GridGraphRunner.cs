@@ -55,4 +55,9 @@
 
         return str;
     }
+
+    public void PrintOnConsole()
+    {
+        Console.WriteLine(ToString());
+    }
 }

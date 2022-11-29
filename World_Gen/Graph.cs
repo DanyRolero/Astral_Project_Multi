@@ -133,6 +133,11 @@ public class Graph {
         //Debug.Log(ToString());
     }
 
+    public void PrintOnConsole()
+    {
+        Console.WriteLine(ToString());
+    }
+
     /*-----------------------------------------------------*/
     public class Node
     {

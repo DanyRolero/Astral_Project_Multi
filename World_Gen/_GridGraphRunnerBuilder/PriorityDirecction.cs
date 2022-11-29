@@ -23,20 +23,6 @@ public class PriorityDirecction : GridGraphRunnerBuilder
     }
 
     /*------------------------------------------------------------------------*/
-    public void SetPriority(Direction direction, int priority)
-    {
-        int oldPosition = 0;
-
-        for (int i = 0; i < directionsPriority.Length; i++)
-        {
-            if (directionsPriority[i] == direction) oldPosition = i;
-        }
-
-        directionsPriority[oldPosition] = directionsPriority[priority];
-        directionsPriority[priority] = direction;
-    }
-
-    /*------------------------------------------------------------------------*/
     public override void Build(GridGraphRunner runner)
     {
         graph = runner.graph;
@@ -90,4 +76,20 @@ public class PriorityDirecction : GridGraphRunnerBuilder
             }
         }
     }
+
+    /*------------------------------------------------------------------------*/
+    public void SetPriority(Direction direction, int priority)
+    {
+        int oldPosition = 0;
+
+        for (int i = 0; i < directionsPriority.Length; i++)
+        {
+            if (directionsPriority[i] == direction) oldPosition = i;
+        }
+
+        directionsPriority[oldPosition] = directionsPriority[priority];
+        directionsPriority[priority] = direction;
+    }
+
+
 }
