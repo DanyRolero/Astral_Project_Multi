@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{AE40E9F4-1603-42A7-B2AC-C5652B255610}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="_GridGraphBuilders/SubGraphWaysConnect.cs">
     <Files>
-      <File FileName="Program.cs" Line="16" Column="3" />
-      <File FileName="_GridGraphBuilders/SubGraphPathConnect.cs" Line="5" Column="7" />
+      <File FileName="Program.cs" Line="34" Column="3" />
       <File FileName="GridGraphRunner.cs" Line="1" Column="1" />
-      <File FileName="GenericGrid.cs" Line="1" Column="1" />
+      <File FileName="GenericGrid.cs" Line="75" Column="31" />
+      <File FileName="_GridGraphBuilders/SubGraphPathConnect.cs" Line="35" Column="1" />
+      <File FileName="GridGraph.cs" />
+      <File FileName="Graph.cs" />
+      <File FileName="SubGraph.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,11 +17,17 @@
           <Node name="Astral" expanded="True">
             <Node name="World_Gen" expanded="True">
               <Node name="_GridGraphBuilders" expanded="True" />
-              <Node name="GenericGrid.cs" selected="True" />
+              <Node name="_GridIntCreators" expanded="True" />
+              <Node name="_Random" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

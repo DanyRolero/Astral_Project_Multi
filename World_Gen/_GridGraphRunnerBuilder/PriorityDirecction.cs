@@ -90,6 +90,4 @@ public class PriorityDirecction : GridGraphRunnerBuilder
         directionsPriority[oldPosition] = directionsPriority[priority];
         directionsPriority[priority] = direction;
     }
-
-
 }
