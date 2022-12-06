@@ -13,6 +13,7 @@
     <None Remove="_Random\" />
     <None Remove="_GridGraphRunnerBuilder\" />
     <None Remove="_GridIntCreators\" />
+    <None Remove="_GridBoolCreators\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_GridGraphBuilders\MazesBuilders\" />
@@ -20,5 +21,6 @@
     <Folder Include="_Random\" />
     <Folder Include="_GridGraphRunnerBuilder\" />
     <Folder Include="_GridIntCreators\" />
+    <Folder Include="_GridBoolCreators\" />
   </ItemGroup>
 </Project>

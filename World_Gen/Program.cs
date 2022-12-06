@@ -1,7 +1,8 @@
-﻿int columns = 3;
-int rows = 3;
+﻿//int columns = 5;
+//int rows = 4;
 
 
+/*
 //Grilla de enteros a partir de la cual se obtiene una adyacencia de un grafo de grilla
 Grid<int> grid = new Grid<int>(columns, rows);
 grid.Build(new RandomRangeGridIntBuilder(1, 2));
@@ -47,4 +48,11 @@ graph.PrintOnConsole();
 GridGraphRunner runner2 = new GridGraphRunner(graph, runner.path[0]);
 runner2.Build(new PriorityDirecction());
 runner2.PrintOnConsole();
+*/
 
+int units = 4;
+
+RandomSizeFromAcountUnits creator = new RandomSizeFromAcountUnits(units);
+Grid<bool> grid = creator.Create();
+//grid.Build(new RandomActivatesFromAmountUnits(units));
+grid.PrintOnConsole();
