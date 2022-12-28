@@ -14,6 +14,7 @@
     <None Remove="_GridGraphRunnerBuilder\" />
     <None Remove="_GridIntCreators\" />
     <None Remove="_GridBoolCreators\" />
+    <None Remove="_GridBoolShapeCollectors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_GridGraphBuilders\MazesBuilders\" />
@@ -22,5 +23,6 @@
     <Folder Include="_GridGraphRunnerBuilder\" />
     <Folder Include="_GridIntCreators\" />
     <Folder Include="_GridBoolCreators\" />
+    <Folder Include="_GridBoolShapeCollectors\" />
   </ItemGroup>
 </Project>

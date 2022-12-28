@@ -31,7 +31,8 @@ public class PriorityDirecction : GridGraphRunnerBuilder
         visited = new bool[graph.length];
         visited[runner.initialNode] = true;
 
-        runner.path[currentPosition] = runner.initialNode;
+        runner.AddNodeToPath(runner.initialNode);
+
         runner.AddWay();
         runner.AddNodeToWay(0, runner.initialNode);
 
@@ -52,7 +53,7 @@ public class PriorityDirecction : GridGraphRunnerBuilder
                         visited[currentAdjacent] = true;
                         currentPosition++;
                         stack.Add(currentAdjacent);
-                        runner.path[currentPosition] = currentAdjacent;
+                        runner.AddNodeToPath(currentAdjacent);
 
                         if (isBackTracking)
                         {

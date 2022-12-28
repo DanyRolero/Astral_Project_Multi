@@ -1,24 +1,28 @@
 //Construye una matriz binaria con forma de pirámide
-public class PyramidGridBoolBuilder : Builder<bool>
+public class PyramidGridBoolBuilder : GridCreator<bool>
 {
-    private int widthStep;
-    private int heightStep;
-    private int totalFloors;
+    public int widthStep;
+    public int heightStep;
+    public int totalFloors;
+    private int rows;
+    private int columns;
+
+
     /*-----------------------------------------------------*/
-    public PyramidGridBoolBuilder(int widthStep = 1, int heightStep = 1, int totalFloors = 2)
+    public PyramidGridBoolBuilder(int columns = 2, int rows = 2, int widthStep = 1, int heightStep = 1, int totalFloors = 2)
     {
         this.widthStep = widthStep;
         this.heightStep = heightStep;
         this.totalFloors = totalFloors;
+
+        this.rows = heightStep * totalFloors;
+        this.columns = (widthStep * totalFloors) + widthStep * (totalFloors - 1);
     }
 
     /*-----------------------------------------------------*/
-    public override void Build(Grid<bool> grid)
+    public override Grid<bool> Create()
     {
-        int rows = heightStep * totalFloors;
-        int columns = (widthStep * totalFloors) + widthStep * (totalFloors - 1);
-
-        grid.Reset(columns, rows);
+        Grid<bool> grid = new Grid<bool>(columns, rows);
 
         int padding = 0;
 
@@ -29,6 +33,9 @@ public class PyramidGridBoolBuilder : Builder<bool>
             {
                 grid.SetValue(x, y, true);
             }
-        }   
+        }
+
+        return grid;
     }
+
 }

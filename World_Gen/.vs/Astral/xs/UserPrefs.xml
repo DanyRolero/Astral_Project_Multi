@@ -1,31 +1,30 @@
 ﻿<Properties StartupConfiguration="{AE40E9F4-1603-42A7-B2AC-C5652B255610}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="_GridBoolBuilders/RandomActivatesFromAmountUnits.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_GridBoolShapeCollectors/SquareGridBoolCollector.cs">
     <Files>
-      <File FileName="Program.cs" Line="47" Column="1" />
-      <File FileName="_GridBoolCreators/RandomSizeFromAcountUnits.cs" Line="38" Column="1" />
-      <File FileName="GenericGrid.cs" Line="87" Column="7" />
-      <File FileName="_GridBoolBuilders/RandomActivatesFromAmountUnits.cs" Line="33" Column="33" />
+      <File FileName="Program.cs" />
+      <File FileName="_GridBoolCreators/AdjacentsRain.cs" Line="22" Column="26" />
+      <File FileName="_GridBoolCreators/Square.cs" Line="10" Column="29" />
+      <File FileName="_GridBoolShapeCollectors/AbstractGridBoolShapeCollector.cs" Line="3" Column="44" />
+      <File FileName="_GridBoolShapeCollectors/SquareGridBoolCollector.cs" Line="20" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Astral" expanded="True">
             <Node name="World_Gen" expanded="True">
-              <Node name="_GridBoolBuilders" expanded="True" />
-              <Node name="_GridBoolCreators" expanded="True">
-                <Node name="RandomSizeFromAcountUnits.cs" selected="True" />
-              </Node>
+              <Node name="_GridBoolCreators" expanded="True" />
+              <Node name="_GridBoolShapeCollectors" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.World__Gen PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

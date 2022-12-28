@@ -3,7 +3,7 @@
     public int initialNode { get; protected set; }
     public GridGraph graph;
 
-    public int[] path;
+    public List<int> path = new List<int>();
     public List<SubGraph> ways;
 
     public GridGraphRunner(GridGraph graph, int initialNode = 0)
@@ -11,8 +11,12 @@
         this.initialNode = initialNode;
         this.graph = graph;
 
-        path = new int[graph.length];
         ways = new List<SubGraph>();
+    }
+    /*------------------------------------------------------------------------*/
+    public void AddNodeToPath(int node)
+    {
+        path.Add(node);
     }
 
     /*------------------------------------------------------------------------*/
@@ -37,7 +41,7 @@
     {
         string str = "Recorrido de GridGraph Runner:\n";
 
-        for (int i = 0; i < path.Length; i++)
+        for (int i = 0; i < path.Count; i++)
         {
             str += path[i].ToString() + " -> ";
         }

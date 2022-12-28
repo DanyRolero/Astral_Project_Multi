@@ -51,7 +51,7 @@ public class Grid<T>
         grid[index] = value;
     }
 
-    /*-----------------------------------------------------*/
+    /*-----------------------------------------------------------*/
     public T GetValue(int index)
     {
         return grid[index];
@@ -85,6 +85,15 @@ public class Grid<T>
         Direction.Left => grid[index - 1],
         _ => throw new ArgumentOutOfRangeException(nameof(adjacent), $"Not expected direction value: {adjacent}"),
     };
+
+    public int GetAdjecentPosition(int index, Direction adjacent)
+    {
+        if (adjacent == Direction.Up) return index - columns;
+        if (adjacent == Direction.Right) return index + 1;
+        if (adjacent == Direction.Down) return index + columns;
+        if (adjacent == Direction.Left) return index - 1;
+        return -1;
+    }
 
     /*-----------------------------------------------------*/
     public override string ToString()
